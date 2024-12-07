@@ -5,6 +5,9 @@ function navHome(loc) {
   else {
     window.location.href = "../index.html";
   }
+}
+
+function openLink(link) {
   
-  
+  //window.open(link, '_blank');
 }
