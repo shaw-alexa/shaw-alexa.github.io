@@ -1,0 +1,59 @@
+html {
+  font-size: 100%; /* Default: 16px */
+}
+
+body {
+  background-color: #FFF2FF;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.logo {
+  width: 5em;
+  height: 5em;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 10px;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.navLink {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+}
+
+#projects {
+  border: solid 4px #2D1674;
+  border-radius: 1em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#about:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+@media (max-width: 768px) { /* Adjust for mobile screens */
+  html {
+    font-size: 92%;
+  }
+
+  nav {
+    gap: 50px;
+  }
+}
