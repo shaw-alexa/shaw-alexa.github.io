@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACUVUE® Go!</title>
+    <link rel="stylesheet" href="acuvue.css"/>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.png">
+    <script src="../../index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="../../images/logo.png" class="logo" onclick="navHome('projects')" alt="AJS in a purple circle">
+      <nav>
+        <a href="../projects.html" class="navLink" id="projects">Projects</a>
+        <a href="../about.html" class="navLink" id="about">About</a>
+      </nav>
+    </header>
+
+    <div class="projectInfo">
+      <h3>ACUVUE® Go!</h3>
+      <p><em>ITWS Capstone Group Project</em></p>
+      <p class="skillsApplied">Mobile UX <span class="coloredDot">•</span> Prototyping <span class="coloredDot">•</span> Interaction Design</p>
+      <button onclick="openProject('../projects.html')" class="returnBtn">Return to projects page</button>
+    </div>
+
+    <h4>Challenge</h4>
+    <p>ACUVUE® is looking for a way to effectively differentiate itself from competitors, show the value and 
+      superiority of their product, and ensure optometrists entering the professional space use ACUVUE® lenses. 
+      ACUVUE® contact lenses focus on comfort and design but come at a premium price. Additionally, once 
+      professionals start recommending and utilizing a brand, they are unlikely to switch.</p>
+   
+    <h4>Objectives</h4>
+    <ul>
+      <li>Build a mobile application with mini games and interactive elements optomery students can use at a conference.</li>
+      <li>Design the experience to remain in the user’s browser so they don’t need to download an external application.</li>
+    </ul>
+    <button class="dPurpleBtn" onclick="openLink('https://www.figma.com/proto/6QvtewzK0tG0P7FA1CkoTJ/Capstone-Acuvue-Designs?node-id=142-181&t=tpDGHMtZAr2Fa30C-1&show-proto-sidebar=1&starting-point-node-id=142%3A181')">View Prototype</button>
+
+    <h4>Development</h4>
+    <p>The front-end of the application was built using React.js and CSS. The back-end was developed using Node.js 
+      and MongoDB. The final application included a sign up page and a main page for users to view activities. 
+      The application included five mini games: trivia, anagrams, phrase guesser, odd one out, and memory. 
+      A fedback survey was also included. Two interactive elements including a QR code for visiting the ACUVUE® 
+      booth and attending a talk were included as interactive elements. A rewards shop was also included to 
+      encourage users to continue playing to earn prizes.</p>
+    <button class="lPurpleBtn" onclick="showVideo()" id="demoBtn">View Demo</button>
+    <iframe src="https://player.vimeo.com/video/1037237072?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="ITWS Capstone" id="demo"></iframe>
+    
+    <h4>Future Steps</h4>
+    <p>The application is approved to be launched at an upcoming optomery conference.</p>
+
+    <h4>Lessons Learned</h4>
+    <ul>
+      <li>Beware of scope creep, particularly for projects with a quick turnaround time.</li>
+      <li>Always have a particular audience you’re designing for.</li>
+    </ul>
+  </body>
+</html>
