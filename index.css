@@ -44,7 +44,7 @@ nav {
 
 h2 {
   font-family: "Cookie", cursive;
-  font-size: 3.8em;
+  font-size: 4.2em;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -63,11 +63,11 @@ h2 {
 }
 
 .words {
-  width: 65%;
+  width: 45%;
 }
 
 .shapes {
-  width: 45%;
+  width: 55%;
 }
 
 .r2 {
@@ -104,7 +104,7 @@ h2 {
   border-radius: 50%;
   display: inline-block;
   margin-left: 9%;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 #d4 {
@@ -123,7 +123,7 @@ h2 {
   display: inline-block;
   border: solid 4px #2D1674;
   margin-left: 30%;
-  margin-top: 8%;
+  margin-top: 6%;
 }
 
 #d6 {
@@ -133,7 +133,7 @@ h2 {
   border-radius: 50%;
   display: inline-block;
   margin-left: 20%;
-  margin-top: 25%;
+  margin-top: 22%;
 }
 
 #d7 {
@@ -152,7 +152,7 @@ h2 {
   display: inline-block;
   border: solid 4px #2D1674;
   margin-left: 2%;
-  margin-top: 25%;
+  margin-top: 22%;
 }
 
 
@@ -172,7 +172,7 @@ h2 {
   border-radius: 50%;
   display: inline-block;
   border: solid 4px #9271C2;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-left: 10%;
 }
 
