@@ -10,12 +10,12 @@ body {
   padding: 0 10px;
 }
 
-.logo {
+#logo {
   width: 5em;
   height: 5em;
 }
 
-.logo:hover {
+#logo:hover {
   cursor: pointer;
 }
 
@@ -51,11 +51,11 @@ nav {
   align-items: center;
 }
 
-.dPurpleBtn {
-  background-color: #2D1674;
+.lPurpleBtn {
+  background-color: #9271C2;
   color: white;
   font-size: 1.3em;
-  border: solid 2px #2D1674;
+  border: solid 2px #9271C2;
   border-radius: 10px;
   height: 2.2em;
   font-weight: bold;
@@ -63,8 +63,8 @@ nav {
   text-align: center;
 }
 
-.dPurpleBtn:hover {
-  background: linear-gradient(#2D1674, white);
+.lPurpleBtn:hover {
+  background: linear-gradient(#9271C2, white);
   cursor: pointer;
 }
 
@@ -259,9 +259,55 @@ p {
   right: -2.5%;
 }
 
+body.dark-mode {
+  background-color: #110c23;
+  color: #FFF2FF;
+}
+
+body.dark-mode .navLink {
+  color: #FFF2FF;
+}
+
+body.dark-mode #d1, body.dark-mode #d3, body.dark-mode #d7, body.dark-mode #d9 {
+  background-color: #FFF2FF;
+}
+
+body.dark-mode #d5, body.dark-mode #d11 {
+  border-color: #FFF2FF;
+}
+
+body.dark-mode #about {
+  border-color: #9271C2;
+}
+
+body.dark-mode .borderBox {
+  border-color: #9271C2;
+}
+
+body.dark-mode .lPurpleBtn {
+  color:#FFF2FF;
+}
+
+body.dark-mode .lPurpleBtn:hover {
+  background: linear-gradient(#9271C2, #FFF2FF);
+}
+
+body.dark-mode .contanctInfo {
+  color:#9271C2;
+}
+
+#modeBtn {
+  height: 3em;
+  width: 3em;
+}
+
+#modeBtn:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   nav {
-    gap: 50px;
+    gap: 22px;
   }
 
   h3 {
@@ -285,6 +331,11 @@ p {
     height: 12em;
     width: 9.8em;
     margin-bottom: 10px;
+  }
+
+  #modeBtn {
+    height: 2.8em;
+    width: 2.8em;
   }
 
   #d2 {

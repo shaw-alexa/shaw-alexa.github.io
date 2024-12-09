@@ -8,12 +8,12 @@ body {
   padding: 2px 10px;
 }
 
-.logo {
+#logo {
   width: 5em;
   height: 5em;
 }
 
-.logo:hover {
+#logo:hover {
   cursor: pointer;
 }
 
@@ -81,7 +81,7 @@ ul {
 .dPurpleBtn {
   background-color: #2D1674;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.3em;
   border: solid 2px #2D1674;
   border-radius: 10px;
   height: 2.1em;
@@ -93,7 +93,7 @@ ul {
 .lPurpleBtn {
   background-color: #9271C2;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.3em;
   border: solid 2px #9271C2;
   border-radius: 10px;
   height: 2.1em;
@@ -158,9 +158,54 @@ iframe {
   left: 49%;
 }
 
+body.dark-mode {
+  background-color: #110c23;
+  color: #FFF2FF;
+}
+
+body.dark-mode .navLink {
+  color: #FFF2FF;
+}
+
+body.dark-mode #projects {
+  border-color: #9271C2;
+}
+
+body.dark-mode .projectView {
+  border-color: #9271C2;
+}
+
+body.dark-mode .dPurpleBtn {
+  background-color: #FFF2FF;
+  color:#2D1674;
+}
+
+body.dark-mode .dPurpleBtn:hover {
+  background: linear-gradient(#FFF2FF, #9271C2);
+}
+
+body.dark-mode .returnBtn {
+  color:#FFF2FF;
+  border-color: #FFF2FF;
+}
+
+body.dark-mode .returnBtn:hover {
+  color: #9271C2;
+  border-color: #9271C2;
+}
+
+#modeBtn {
+  height: 3em;
+  width: 3em;
+}
+
+#modeBtn:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) { /* Adjust for mobile screens */
   nav {
-    gap: 30px;
+    gap: 22px;
   }
 
   h3 {
@@ -178,5 +223,10 @@ iframe {
     position:relative;
     left: auto;
     z-index: 0;
+  }
+
+  #modeBtn {
+    height: 2.8em;
+    width: 2.8em;
   }
 }

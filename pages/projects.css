@@ -8,12 +8,12 @@ body {
   padding: 0 10px;
 }
 
-.logo {
+#logo {
   width: 5em;
   height: 5em;
 }
 
-.logo:hover {
+#logo:hover {
   cursor: pointer;
 }
 
@@ -121,15 +121,56 @@ h3 {
   transform: translate(-40%, -50%);
 }
 
+body.dark-mode {
+  background-color: #110c23;
+  color: #FFF2FF;
+}
+
+body.dark-mode .navLink {
+  color: #FFF2FF;
+}
+
+body.dark-mode #projects {
+  border-color: #9271C2;
+}
+
+body.dark-mode .projectView {
+  border-color: #9271C2;
+}
+
+body.dark-mode .dPurpleBtn {
+  background-color: #FFF2FF;
+  color:#2D1674;
+}
+
+body.dark-mode .dPurpleBtn:hover {
+  background: linear-gradient(#FFF2FF, #9271C2);
+}
+
+#modeBtn {
+  height: 3em;
+  width: 3em;
+}
+
+#modeBtn:hover {
+  cursor: pointer;
+}
+
+
 @media (max-width: 768px) { 
   nav {
-    gap: 30px;
+    gap: 22px;
   }
 
   .dPurpleBtn {
-    font-size: 1.1em;
+    font-size: 1.2em;
     height: 2.7em;
     width: 9em;
+  }
+
+  #modeBtn {
+    height: 2.8em;
+    width: 2.8em;
   }
 
   h3 {

@@ -30,3 +30,49 @@ function showVideo() {
     btn.innerHTML = "View Demo";
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const logo = document.getElementById('logo');
+  const modeBtn = document.getElementById('modeBtn');
+  const isDarkMode = localStorage.getItem('darkMode') === 'true'; // Retrieve dark mode state
+  const currentPath = window.location.pathname;
+
+  if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+
+  if (currentPath.includes('index')) {
+    logo.src = isDarkMode ? "images/darkModelogo.png": "images/logo.png";
+    modeBtn.src = isDarkMode ? "images/lightMode.png": "images/darkMode.png";
+  } 
+  else if (currentPath.includes('projects.html') || currentPath.includes('about')) {
+    logo.src = isDarkMode ? "../images/darkModelogo.png": "../images/logo.png";
+    modeBtn.src = isDarkMode ? "../images/lightMode.png": "../images/darkMode.png";
+  } 
+  else {
+    logo.src = isDarkMode ? "../../images/darkModelogo.png": "../../images/logo.png";
+    modeBtn.src = isDarkMode ? "../../images/lightMode.png": "../../images/darkMode.png";
+  }
+});
+
+function darkMode(loc) {
+  const modeBtn = document.getElementById('modeBtn');
+  const logo = document.getElementById('logo');
+  const isDarkMode = document.body.classList.toggle('dark-mode');
+
+  localStorage.setItem('darkMode', isDarkMode);
+
+  if (loc === 'home') {
+    logo.src = isDarkMode ? "images/darkModelogo.png": "images/logo.png" ;
+    modeBtn.src = isDarkMode ? "images/lightMode.png": "images/darkMode.png";
+  } 
+  else if (loc === 'projects') {
+    logo.src = isDarkMode ?  "../images/darkModelogo.png": "../images/logo.png";
+    modeBtn.src = isDarkMode ?  "../images/lightMode.png": "../images/darkMode.png";
+  } 
+  else {
+    logo.src = isDarkMode ? "../../images/darkModelogo.png": "../../images/logo.png";
+    modeBtn.src = isDarkMode ? "../../images/lightMode.png": "../../images/darkMode.png";
+  }
+}
+

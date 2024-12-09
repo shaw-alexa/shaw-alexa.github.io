@@ -11,10 +11,11 @@
 
   <body>
     <header>
-      <img src="../../images/logo.png" class="logo" onclick="navHome('projectExpanded')" alt="AJS in a purple circle">
+      <img src="../../images/logo.png" id="logo" onclick="navHome('projectExpanded')" alt="AJS in a purple circle">
       <nav>
         <a href="../projects.html" class="navLink" id="projects">Projects</a>
         <a href="../about.html" class="navLink" id="about">About</a>
+        <img src="../../images/darkMode.png" alt="purple circle with moon" onclick="darkMode('inner')" id="modeBtn">
       </nav>
     </header>
 
@@ -57,7 +58,7 @@
       application matched current ACUVUE® design standards. Additionally, I led development on the front-end of
       the application generating the ideas for the games and implementing them. I also worked on connecting the 
       front-end solution to the back-end ensuring all information could correctly be saved to the the database.</p>
-      <button class="dPurpleBtn" onclick="openLink('https://www.figma.com/proto/6QvtewzK0tG0P7FA1CkoTJ/Capstone-Acuvue-Designs?node-id=142-181&t=tpDGHMtZAr2Fa30C-1&show-proto-sidebar=1&starting-point-node-id=142%3A181')">View Prototype</button>
+      <button class="lPurpleBtn" onclick="openLink('https://www.figma.com/proto/6QvtewzK0tG0P7FA1CkoTJ/Capstone-Acuvue-Designs?node-id=142-181&t=tpDGHMtZAr2Fa30C-1&show-proto-sidebar=1&starting-point-node-id=142%3A181')">View Prototype</button>
       
     <h4>Development</h4>
     <p>The front-end of the application was built using React.js and CSS. The back-end was developed using Node.js 
@@ -66,7 +67,7 @@
       A fedback survey was also included. Two interactive elements including a QR code for visiting the ACUVUE® 
       booth and attending a talk were included as interactive elements. A rewards shop was also included to 
       encourage users to continue playing to earn prizes.</p>
-    <button class="lPurpleBtn" onclick="showVideo()" id="demoBtn">View Demo</button>
+    <button class="dPurpleBtn" onclick="showVideo()" id="demoBtn">View Demo</button>
     <video controls id="demo">
       <source src="../../images/ITWS Capstone.mp4" type="video/mp4">
       Your browser does not support the video tag.
