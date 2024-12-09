@@ -259,11 +259,7 @@ p {
   right: -2.5%;
 }
 
-@media (max-width: 768px) { /* Adjust for mobile screens */
-  html {
-    font-size: 92%;
-  }
-
+@media (max-width: 768px) {
   nav {
     gap: 50px;
   }

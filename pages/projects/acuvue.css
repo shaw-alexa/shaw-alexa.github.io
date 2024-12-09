@@ -138,11 +138,27 @@ iframe {
   color:#9271C2;
 }
 
-@media (max-width: 768px) { /* Adjust for mobile screens */
-  html {
-    font-size: 92%;
-  }
+.basicInfo {
+  display:flex;
+  width: 100%;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
+.info {
+  line-height: 2.7em;
+}
+
+.acuvueHomescreen {
+  height: auto;
+  width: 7em;
+  position: absolute;
+  z-index: 1;
+  left: 49%;
+}
+
+@media (max-width: 768px) { /* Adjust for mobile screens */
   nav {
     gap: 30px;
   }
@@ -154,5 +170,13 @@ iframe {
   #demo {
     height: 300px;
     width: 350px;
+  }
+
+  .acuvueHomescreen {
+    height: 20em;
+    width: 9em;
+    position:relative;
+    left: auto;
+    z-index: 0;
   }
 }

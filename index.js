@@ -2,8 +2,11 @@ function navHome(loc) {
   if (loc == "home") {
     window.location.href = "index.html";
   }
-  else {
+  else if (loc == "projects") {
     window.location.href = "../index.html";
+  }
+  else {
+    window.location.href = "../../../index.html";
   }
 }
 

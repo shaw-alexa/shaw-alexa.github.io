@@ -11,7 +11,7 @@
 
   <body>
     <header>
-      <img src="../../images/logo.png" class="logo" onclick="navHome('projects')" alt="AJS in a purple circle">
+      <img src="../../images/logo.png" class="logo" onclick="navHome('projectExpanded')" alt="AJS in a purple circle">
       <nav>
         <a href="../projects.html" class="navLink" id="projects">Projects</a>
         <a href="../about.html" class="navLink" id="about">About</a>
@@ -20,10 +20,25 @@
 
     <div class="projectInfo">
       <h3>ACUVUE® Go!</h3>
-      <p><em>ITWS Capstone Group Project</em></p>
       <p class="skillsApplied">Mobile UX <span class="coloredDot">•</span> Prototyping <span class="coloredDot">•</span> Interaction Design</p>
       <button onclick="openProject('../projects.html')" class="returnBtn">Return to projects page</button>
     </div>
+
+    <section class="basicInfo">
+      <div>
+        <p class="info"><strong>Client: </strong>ACUVUE®</p>
+        <p class="info"><strong>Class: </strong>Information Technology & Web Science Capstone Group Project</p>
+        <p class="info"><strong>Role: </strong>UI/UX Designer/Developer</p>
+        <p class="info"><strong>Duration: </strong> September 2024 - December 2024</p>
+      </div>
+      <img src="../../images/acuvueHomescreen.png" class="acuvueHomescreen">
+    </section>
+
+    <h4>Background</h4>
+    <p>ACUVUE® is a premium contact lens brand manufactured by Johnson & Johnson. ACUVUE® services millions of 
+      people worldwide providing them with a premium contact lens experience. Additionally, ACUVUE® collaborates 
+      with eye care professionals to update them on the latest advancements in eye health. ACUVUE® is a leader in 
+      the contact lens industry bringing innovation and technological advancements to millions of patients worldwide</p>
 
     <h4>Challenge</h4>
     <p>ACUVUE® is looking for a way to effectively differentiate itself from competitors, show the value and 
@@ -36,8 +51,14 @@
       <li>Build a mobile application with mini games and interactive elements optomery students can use at a conference.</li>
       <li>Design the experience to remain in the user’s browser so they don’t need to download an external application.</li>
     </ul>
-    <button class="dPurpleBtn" onclick="openLink('https://www.figma.com/proto/6QvtewzK0tG0P7FA1CkoTJ/Capstone-Acuvue-Designs?node-id=142-181&t=tpDGHMtZAr2Fa30C-1&show-proto-sidebar=1&starting-point-node-id=142%3A181')">View Prototype</button>
 
+    <h4>My Role</h4>
+    <p>I developed the high fidelity wireframes for the client using Figma and ensured that the design of the 
+      application matched current ACUVUE® design standards. Additionally, I led development on the front-end of
+      the application generating the ideas for the games and implementing them. I also worked on connecting the 
+      front-end solution to the back-end ensuring all information could correctly be saved to the the database.</p>
+      <button class="dPurpleBtn" onclick="openLink('https://www.figma.com/proto/6QvtewzK0tG0P7FA1CkoTJ/Capstone-Acuvue-Designs?node-id=142-181&t=tpDGHMtZAr2Fa30C-1&show-proto-sidebar=1&starting-point-node-id=142%3A181')">View Prototype</button>
+      
     <h4>Development</h4>
     <p>The front-end of the application was built using React.js and CSS. The back-end was developed using Node.js 
       and MongoDB. The final application included a sign up page and a main page for users to view activities. 
