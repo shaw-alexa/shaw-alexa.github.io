@@ -204,8 +204,18 @@ body.dark-mode .returnBtn:hover {
 }
 
 @media (max-width: 768px) { /* Adjust for mobile screens */
+  #logo {
+    height: 4em;
+    width: 4em;
+  }
+
   nav {
-    gap: 22px;
+    gap: 15px;
+  }
+
+  #modeBtn {
+    height: 2.4em;
+    width: 2.4em;
   }
 
   h3 {
@@ -217,16 +227,18 @@ body.dark-mode .returnBtn:hover {
     width: 350px;
   }
 
-  .acuvueHomescreen {
-    height: 20em;
-    width: 9em;
-    position:relative;
-    left: auto;
-    z-index: 0;
+  .basicInfo {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  #modeBtn {
-    height: 2.8em;
-    width: 2.8em;
+  .acuvueHomescreen {
+    height: 21em;
+    width: 10em;
+    position:relative;
+    left: auto;
+    margin: auto;
+
   }
+
 }

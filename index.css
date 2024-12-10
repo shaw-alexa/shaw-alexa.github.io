@@ -72,6 +72,7 @@ h2 {
 
 .r2 {
   display: flex;
+  justify-content: center;
 }
 
 .words p {
@@ -202,9 +203,14 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
   cursor: pointer;
 }
 
-@media (max-width: 768px) { /* Adjust for mobile screens */
+@media (max-width: 768px) {
+  #logo {
+    height: 4em;
+    width: 4em;
+  }
+
   nav {
-    gap: 22px;
+    gap: 15px;
   }
 
   .row {
@@ -222,30 +228,30 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
   }
 
   #modeBtn {
-    height: 2.8em;
-    width: 2.8em;
+    height: 2.4em;
+    width: 2.4em;
   }
 
   #d1 {
     height: 3.2em;
     width: 3.2em;
     margin-left: 0%;
-    margin-top: 10%;
+    margin-top: 7%;
   } 
 
   #d9 {
-    margin-left: 6em;
+    margin-left: 3em;
   }
 
   #d2 {
     height: 4em;
     width: 4em;
-    margin-left: 8em;
+    margin-left: 6em;
   }
 
   #d3 {
-    margin-left: 1.2em;
-    margin-top: 30%;
+    margin-left: 1em;
+    margin-top: 11%;
   }
 
   #d4 {
@@ -258,17 +264,18 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
   }
 
   #d6 {
-    margin-left: 3.2em;
+    margin-left: 2.2em;
+    margin-top: 14%;
 
   }
 
   #d10 {
-    margin-left:4.1em;
+    margin-left:3em;
 
   }
 
   #d7 {
-    margin-left:4.5em;
+    margin-left:3em;
     height: 3.8em;
     width: 3.8em;
   }
@@ -277,5 +284,6 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
     height: 3.2em;
     width: 3.2em;
     margin-left: 0%;
+    margin-top: 14%;
   }
 }

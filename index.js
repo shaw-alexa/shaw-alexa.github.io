@@ -32,6 +32,11 @@ function showVideo() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  localStorage.removeItem('darkMode');
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    localStorage.setItem('darkMode', true);
+  }
+  
   const logo = document.getElementById('logo');
   const modeBtn = document.getElementById('modeBtn');
   const isDarkMode = localStorage.getItem('darkMode') === 'true'; // Retrieve dark mode state

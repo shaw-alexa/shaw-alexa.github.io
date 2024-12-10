@@ -158,8 +158,17 @@ body.dark-mode .dPurpleBtn:hover {
 
 
 @media (max-width: 768px) { 
+  #logo {
+    height: 4em;
+    width: 4em;
+  }
+
   nav {
-    gap: 22px;
+    gap: 15px;
+  }
+
+  #projects {
+    padding: 0.2em 0.6em 0.2em 0.6em;
   }
 
   .dPurpleBtn {
@@ -169,8 +178,8 @@ body.dark-mode .dPurpleBtn:hover {
   }
 
   #modeBtn {
-    height: 2.8em;
-    width: 2.8em;
+    height: 2.4em;
+    width: 2.4em;
   }
 
   h3 {

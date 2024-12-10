@@ -112,16 +112,6 @@ ul {
   cursor: pointer;
 }
 
-#demo {
-  display: none;
-  height: 400px;
-  width: 600px;
-}
-
-iframe {
-  margin-top: 10px;
-}
-
 .returnBtn {
   background-color: transparent;
   color:#2D1674;
@@ -136,26 +126,6 @@ iframe {
   cursor: pointer;
   border-color:#9271C2;
   color:#9271C2;
-}
-
-.basicInfo {
-  display:flex;
-  width: 100%;
-  gap: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.info {
-  line-height: 2.7em;
-}
-
-.acuvueHomescreen {
-  height: auto;
-  width: 7em;
-  position: absolute;
-  z-index: 1;
-  left: 49%;
 }
 
 body.dark-mode {
@@ -203,30 +173,22 @@ body.dark-mode .returnBtn:hover {
   cursor: pointer;
 }
 
-@media (max-width: 768px) { /* Adjust for mobile screens */
+@media (max-width: 768px) {
+  #logo {
+    height: 4em;
+    width: 4em;
+  }
+
   nav {
-    gap: 22px;
+    gap: 15px;
+  }
+
+  #modeBtn {
+    height: 2.4em;
+    width: 2.4em;
   }
 
   h3 {
     font-size: 1.2em;
-  }
-
-  #demo {
-    height: 300px;
-    width: 350px;
-  }
-
-  .acuvueHomescreen {
-    height: 20em;
-    width: 9em;
-    position:relative;
-    left: auto;
-    z-index: 0;
-  }
-
-  #modeBtn {
-    height: 2.8em;
-    width: 2.8em;
   }
 }
