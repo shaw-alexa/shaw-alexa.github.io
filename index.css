@@ -213,6 +213,10 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
     gap: 15px;
   }
 
+  .navLink {
+    text-decoration: underline;
+  }
+
   .row {
     flex-direction: column;
   }
@@ -240,13 +244,13 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
   } 
 
   #d9 {
-    margin-left: 3em;
+    margin-left: 2.5em;
   }
 
   #d2 {
     height: 4em;
     width: 4em;
-    margin-left: 6em;
+    margin-left: 4.6em;
   }
 
   #d3 {
@@ -255,11 +259,11 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
   }
 
   #d4 {
-    margin-left: 4em;
+    margin-left:3.5em;
   }
 
   #d5 {
-    margin-left: 7.5em;
+    margin-left: 6em;
 
   }
 
@@ -270,12 +274,11 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
   }
 
   #d10 {
-    margin-left:3em;
-
+    margin-left:2.5em;
   }
 
   #d7 {
-    margin-left:3em;
+    margin-left:2.7em;
     height: 3.8em;
     width: 3.8em;
   }

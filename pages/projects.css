@@ -171,6 +171,10 @@ body.dark-mode .dPurpleBtn:hover {
     padding: 0.2em 0.6em 0.2em 0.6em;
   }
 
+  .navLink {
+    text-decoration: underline;
+  }
+
   .dPurpleBtn {
     font-size: 1.2em;
     height: 2.7em;

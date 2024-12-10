@@ -218,6 +218,10 @@ body.dark-mode .returnBtn:hover {
     width: 2.4em;
   }
 
+  .navLink {
+    text-decoration: underline;
+  }
+
   h3 {
     font-size: 1.2em;
   }
