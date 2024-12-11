@@ -100,27 +100,6 @@ h3 {
   cursor: pointer;
 }
 
-.acuvue {
-  position: relative;
-}
-
-.acuvueHomescreen {
-  opacity: 0;
-  position:absolute;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  top: 50%; 
-  left: 65%; 
-  transform: translate(-50%, -50%); 
-  width: 6.5em;
-  height: auto; 
-  z-index: 10;
-}
-
-#acuvueBtn:hover + .acuvueHomescreen {
-  opacity: 1;
-  transform: translate(-40%, -50%);
-}
-
 body.dark-mode {
   background-color: #110c23;
   color: #FFF2FF;
