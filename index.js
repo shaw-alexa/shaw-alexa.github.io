@@ -32,7 +32,6 @@ function showVideo() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  localStorage.removeItem('darkMode');
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     localStorage.setItem('darkMode', true);
   }
