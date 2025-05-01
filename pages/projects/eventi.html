@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Alexa Shaw">
+    <title>Eventi</title>
+    <link rel="stylesheet" href="eventi.css"/>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.png">
+    <script src="../../index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="../../images/logo.png" id="logo" onclick="navHome('projectExpanded')" alt="AJS in a purple circle">
+      <nav>
+        <a href="../projects.html" class="navLink" id="projects">Projects</a>
+        <a href="../about.html" class="navLink" id="about">About</a>
+        <img src="../../images/darkMode.png" alt="purple circle with moon" onclick="darkMode('inner')" id="modeBtn">
+      </nav>
+    </header>
+
+    <div class="projectInfo">
+      <h3>Eventi</h3>
+      <p class="skillsApplied">UI/UX Design <span class="coloredDot">•</span> Usability Testing <span class="coloredDot">•</span> Front-End Development</p>
+      <button onclick="openProject('../projects.html')" class="returnBtn">Return to projects page</button>
+    </div>
+
+    <section class="basicInfo">
+      <div>
+        <p class="info"><strong>Class: </strong>Information Technology & Web Science Software Development Group Project</p>
+        <p class="info"><strong>Role: </strong>UI/UX Designer/Developer</p>
+        <p class="info"><strong>Duration: </strong> January 2025 - April 2025</p>
+      </div>
+    </section>
+
+    <h4>Background</h4>
+    <p>ITWS-6700 Software Development had a semester long group project in which teams were to develop a software solution. 
+      The only requirement for said solution is that each team follow the software development process while building the
+      application.
+    </p>
+
+    <h4>Challenge</h4>
+    <p>When attempting to schedule events in group environments, there are a number of challenges many individuals face. 
+      These include differences in ideas for activities, confusion around the meeting time, or the issue of splitting costs when paying.
+      Eventi aims to solve all of these issues. Eventi is a responsive web application in which users can create events
+      and invite others to join said event allowing for collaboration. Additionally, individuals can record payments within
+      the same application reducing the need for a number of applications for the same event. </p>
+   
+    <h4>Objectives</h4>
+    <ul>
+      <li>Build a responsive web application allowing users to invite others to events, create and edit events, and record payments.</li>
+      <li>Ensure multiple users can add activities to an event.</li>
+    </ul>
+
+    <h4>My Role</h4>
+    <p>I worked on the UI/UX designer and developer for this project. I designed high-fidelity wireframes and prototypes, ran 
+      usability tests, and worked on the front-end code for this application.
+    </p>
+      
+      
+    <h4>Software Development Process</h4>
+    
+    <h5>Planning</h5>
+    <p>The team utilized an agile methodology to foster flexibiltiy during the development process. To keep track of tasks,
+      the team used GitHub projects Kanban board. Each member of the group was assigned tickets and the tickets were closed 
+      as tasks were completed.
+    </p>
+
+    <h5>Design</h5>
+    <p>The team settled on a responsive web design to allow for the use of a single code base and negate the need for users
+      to download an app. Once an application type had been settled on, I began initial designs for the application displayed on 
+      the left. The next phase was to conduct usability testing on the inital designs. A document listing the major takeaways
+      of phase 1 of usability testing is included under the initial designs.These edits were incorporated into the next 
+      iteration of the designs displayed under Phase 2 Designs. A second round of usability testing was conducted with the 
+      designs from phase 2 to catch any lingering or novel issues with the design before moving into the production phase. 
+      The results of the second round of usability testing are listed below the prototypes for phase 2.
+
+    </p>
+    <div class="flexy">
+      <div class="container">
+        <p class="phase"><strong><u>Initial Designs</u></strong></p>
+        <button class="lPurpleBtn" onclick="openLink('https://www.figma.com/proto/61MtAGaipYRTe66QdwsnNa/Phase-1?node-id=1-2&t=KOGFFabVa0M40SJm-1')">View PC Prototype Phase 1</button>
+        <button class="lPurpleBtn" onclick="openLink('https://www.figma.com/proto/61MtAGaipYRTe66QdwsnNa/Phase-1?node-id=0-1&t=KOGFFabVa0M40SJm-1')">View Mobile Prototype Phase 1</button>
+        <object class="pdf" 
+                data=
+    "../../images/Phase 1 - Usability Testing Major Takeaways.pdf"
+                width="550"
+                height="350">
+        </object>
+      </div>
+
+      <div class="container">
+        <p class="phase"><strong><u>Phase 2 Designs</u></strong></p> 
+        <button class="lPurpleBtn" onclick="openLink('https://www.figma.com/proto/qJ707cN0qRwFMh1eRkQD4j/Phase-2?node-id=1-2&t=EbQS53JyJlDMifkK-1')">View PC Prototype Phase 2</button>
+        <button class="lPurpleBtn" onclick="openLink('https://www.figma.com/proto/qJ707cN0qRwFMh1eRkQD4j/Phase-2?node-id=0-1&t=EbQS53JyJlDMifkK-1')">View Mobile Prototype Phase 2</button> 
+         <p>
+         </p>
+         <object class="pdf" 
+         data=
+     "../../images/Phase 2 - Usability Testing Major Takeaways.pdf"
+         width="550"
+         height="350">
+     </object>
+      </div>
+    </div>
+
+    <h5>Development</h5>
+    <p>The front-end of the application was developed using React.js. All UI elements were built as reusable components
+      improving efficency and ensuring a DRY (Don't Repeat Youself) codebase. Tailwind CSS was utilized for styling allowing
+      for customizable styles to be included directly in the markup. For the back-end, Node,js, Express.js, APIs, 
+      and a database with PostgreSQL hosted through Supabase were being utilized in development.
+    </p>
+    <button class="dPurpleBtn" onclick="showVideo()" id="demoBtn">View PC Demo</button>
+    <video controls id="demo">
+      <source src="../../images/Eventi Demo Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button class="dPurpleBtn" onclick="showVideo()" id="demoBtn">View Mobile Demo</button>
+    <video controls id="demo">
+      <source src="../../images/Eventi Mobile Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h5>Testing</h5>
+    <p>The team conducted both functionality and usability testing for the application. Following the completion of the 
+      development process, the team had a final round of usability testing on the live application with the results
+      summarized below.
+    </p>
+     <object class="pdf" 
+         data=
+     "../../images/Phase 3 - Usability Testing Major Takeaways.pdf"
+         width="550"
+         height="350">
+     </object>
+
+    <h5>Deployment</h5>
+    <p>The project was containerized using Docker and deployed to an Azure virtual machine.</p>
+
+    <h5>Maintanence</h5>
+    <p>To allow for easy maintanence of the project, the team followed an organized folder structure and commented their code. 
+      Additionally, we developed installation instructions to allow for local deployment as well as documenation of our database
+      design and test cases and results.
+    </p>
+    
+    <h4>Future Steps</h4>
+    <p>Given more time, the team would have loved to incorporate a map page to allow users to map out their route from
+      one event to another. Additionally, incorporating a payment system directly into the system would take the application
+      to the next level.
+    </p>
+
+    <h4>Lessons Learned</h4>
+    <ul>
+      <li>Develop mobile layout concurently with PC layout.</li>
+      <li>Be mindful of slight functionality differences between browsers.</li>
+    </ul>
+  </body>
+</html>
