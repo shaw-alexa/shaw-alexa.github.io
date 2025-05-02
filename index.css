@@ -8,8 +8,8 @@ body {
 }
 
 #logo {
-  width: 5em;
-  height: 5em;
+  width: 5.5em;
+  height: 5.5em;
 }
 
 #logo:hover {
@@ -186,6 +186,12 @@ body.dark-mode .navLink {
   color: #FFF2FF;
 }
 
+body.dark-mode .contact {
+  background-color: #9271C2;
+  border-color: #2D1674;
+  color:#FFF2FF
+}
+
 body.dark-mode #d1, body.dark-mode #d3 {
   background-color: #FFF2FF;
 }
@@ -202,6 +208,23 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
 #modeBtn:hover {
   cursor: pointer;
 }
+
+.contact {
+  font-weight: bold;
+  font-size: 1.4em;
+  background-color: #2D1674;
+  border: 2px #9271C2 solid;
+  padding: 4px 10px 4px 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact:hover {
+  background-color: #9271C2;
+  border: 2px #2D1674 solid;
+}
+
 
 @media (max-width: 768px) {
   #logo {
