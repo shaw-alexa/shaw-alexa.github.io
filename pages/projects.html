@@ -7,7 +7,7 @@
     <title>Projects</title>
     <link rel="stylesheet" href="projects.css"/>
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
-    <script src="../index.js"></script>
+    <script src="../index.js" defer></script>
   </head>
 
   <body>
@@ -20,42 +20,33 @@
         <img src="images/darkMode.png" alt="purple circle with moon" onclick="darkMode()" id="modeBtn">
       </nav>
     </header>
-    <div class="projectView">
-      <div class="innerBox1">
-        <h3>Eventi</h3>
-        <p><strong>Class:</strong> Software Development</p>
-        <p><strong>Project Overview:</strong> Develop an application of your choosing following the software development process</p>
-        <p><strong>Tech Stack:</strong> Figma, React.js, Vite, Tailwind CSS</p>
+
+    <div class="wrap">
+      <button class="scroll-btn left" aria-label="Scroll left"><</button>
+      <div class="flexyBox" id="scrollContainer">
+        <div class="box" onclick="openProject('projects/eventi.html')">
+          <h3 class="title">Eventi</h3>
+          <p><strong>Class:</strong> Software Development</p>
+          <p><strong>Project Overview:</strong> Develop an application of your choosing following the software development process</p>
+          <p><strong>Tech Stack:</strong> Figma, React.js, Vite, Tailwind CSS</p>
+          <p class="skillsApplied">UI/UX Design <span class="coloredDot">•</span> Usability Testing <span class="coloredDot">•</span> Front-End Development</p>
+        </div>
+        <div class="box" onclick="openProject('projects/acuvue.html')">
+          <h3 class="title">ACUVUE® Go!</h3>
+          <p><strong>Class:</strong> ITWS Capstone</p>
+          <p><strong>Client:</strong> Johnson & Johnson (ACUVUE®)</p>
+          <p><strong>Project Overview:</strong> Develop a mobile game application to engage students at an optometry conference</p>
+          <p><strong>Tech Stack:</strong> Figma, React.js, Node.js, MongoDB®</p>
+          <p class="skillsApplied">Mobile UX <span class="coloredDot">•</span> Prototyping <span class="coloredDot">•</span> Interaction Design</p>
+        </div>
+        <div class="box" onclick="openProject('projects/portfolio.html')">
+          <h3 class="title">Personal Portfolio</h3>
+          <p><strong>Project Overview:</strong> Develop a website to showcase UI/UX design and development work</p>
+          <p><strong>Tech Stack:</strong> Figma, HTML, CSS, JavaScript</p>
+          <p class="skillsApplied">High Fidelity Wireframing <span class="coloredDot">•</span> Front-End Development <span class="coloredDot">•</span> Style Guide</p>
+        </div>
       </div>
-      <div class="innerBox2">
-        <p class="skillsApplied">UI/UX Design <span class="coloredDot">•</span> Usability Testing <span class="coloredDot">•</span> Front-End Development</p>
-        <button class="dPurpleBtn" onclick="openProject('projects/eventi.html')">Learn More</button>
-      </div>
-    </div>
-    <div class="projectView acuvue">
-      <div class="innerBox1">
-        <h3>ACUVUE® Go!</h3>
-        <p><strong>Class:</strong> ITWS Capstone</p>
-        <p><strong>Client:</strong> Johnson & Johnson (ACUVUE®)</p>
-        <p><strong>Project Overview:</strong> Develop a mobile game application to engage students at an optometry conference</p>
-        <p><strong>Tech Stack:</strong> Figma, React.js, Node.js, MongoDB®</p>
-      </div>
-      <div class="innerBox2">
-        <p class="skillsApplied">Mobile UX <span class="coloredDot">•</span> Prototyping <span class="coloredDot">•</span> Interaction Design</p>
-        <button class="dPurpleBtn" onclick="openProject('projects/acuvue.html')" id="acuvueBtn">Learn More</button>
-      </div>
-      
-    </div>
-    <div class="projectView">
-      <div class="innerBox1">
-        <h3>Personal Portfolio</h3>
-        <p><strong>Project Overview:</strong> Develop a website to showcase UI/UX design and development work</p>
-        <p><strong>Tech Stack:</strong> Figma, HTML, CSS, JavaScript</p>
-      </div>
-      <div class="innerBox2">
-        <p class="skillsApplied">High Fidelity Wireframing <span class="coloredDot">•</span> Front-end Development <span class="coloredDot">•</span> Style Guide</p>
-        <button class="dPurpleBtn" onclick="openProject('projects/portfolio.html')">Learn More</button>
-      </div>
+      <button class="scroll-btn right" aria-label="Scroll right">></button>
     </div>
   </body>
 </html>

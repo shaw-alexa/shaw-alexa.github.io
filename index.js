@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('scrollContainer');
+  const leftBtn = document.querySelector('.scroll-btn.left');
+  const rightBtn = document.querySelector('.scroll-btn.right');
+
+  const scrollAmount = container.offsetWidth / 2;
+
+  leftBtn.addEventListener('click', () => {
+    container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  rightBtn.addEventListener('click', () => {
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+});
+
 function navHome(loc) {
   if (loc == "home") {
     window.location.href = "index.html";
