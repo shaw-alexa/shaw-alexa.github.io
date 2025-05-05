@@ -34,9 +34,43 @@ function openProject(link) {
   window.open(link, '_self');
 }
 
+function showEventiVideo(num) {
+  let vid;
+  let btn;
+  if (num == 1) {
+    vid = document.getElementById("demo");
+    btn = document.getElementById("demoBtn");
+  }
+  else {
+    vid = document.getElementById("demo2");
+    btn = document.getElementById("demoBtn2");
+  }
+ 
+  if (window.getComputedStyle(vid).display === "none"){
+    vid.style.display = "block";
+    if (num == 1) {
+      btn.innerHTML = "Close PC Demo";
+    }
+    else {
+      btn.innerHTML = "Close Mobile Demo";
+    }
+    
+  }
+  else {
+    vid.style.display = "none";
+    if (num == 1) {
+      btn.innerHTML = "View PC Demo";
+    }
+    else {
+      btn.innerHTML = "View Mobile Demo";
+    }
+  }
+}
+
 function showVideo() {
   let vid = document.getElementById("demo");
   let btn = document.getElementById("demoBtn");
+ 
   if (window.getComputedStyle(vid).display === "none"){
     vid.style.display = "block";
     btn.innerHTML = "Close Demo";
