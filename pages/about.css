@@ -122,7 +122,7 @@ p {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -308,7 +308,8 @@ body.dark-mode .lPurpleBtn {
 }
 
 body.dark-mode .lPurpleBtn:hover {
-  background: linear-gradient(#9271C2, #FFF2FF);
+  background-color: transparent;
+  color:#FFF2FF;
 }
 
 body.dark-mode .contanctInfo {
@@ -358,6 +359,18 @@ body.dark-mode .contact {
     gap: 15px;
   }
 
+  .navLink {
+    font-size: 1.3em;
+  }
+
+  .contact {
+    font-size: 1.3em;
+  }
+
+  .info {
+    align-items: center; 
+  }
+
   #modeBtn {
     height: 2.4em;
     width: 2.4em;
@@ -365,6 +378,10 @@ body.dark-mode .contact {
 
   #about {
     padding: 0.2em 0.6em 0.2em 0.6em;
+  }
+
+  .blurb {
+    width: 100%;
   }
 
   h3 {
@@ -385,13 +402,9 @@ body.dark-mode .contact {
   }
 
   .pic {
-    height: 12em;
-    width: 9.8em;
+    height: 15em;
+    width: 12em;
     margin-bottom: 10px;
-  }
-
-  .navLink {
-    text-decoration: underline;
   }
 
   #d2 {
