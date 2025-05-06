@@ -192,6 +192,12 @@ body.dark-mode .contact {
   color:#FFF2FF
 }
 
+body.dark-mode .contact:hover {
+  background-color: #2D1674;
+  border-color: #9271C2;
+  color:#FFF2FF
+}
+
 body.dark-mode #d1, body.dark-mode #d3 {
   background-color: #FFF2FF;
 }
@@ -237,7 +243,11 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
   }
 
   .navLink {
-    text-decoration: underline;
+    font-size: 1.3em;
+  }
+
+  .contact {
+    font-size: 1.3em;
   }
 
   .row {

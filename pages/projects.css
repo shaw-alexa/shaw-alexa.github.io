@@ -84,7 +84,7 @@ h3 {
   justify-content: flex-start;
   flex: 0 0 calc(50% - 10px);
   scroll-snap-align: start;
-  min-width: 250px;
+  min-width: 265px;
   padding: 7px 15px;
   border: solid 4px #2D1674;
   border-radius: 20px;
@@ -162,6 +162,31 @@ body.dark-mode .contact {
   color:#FFF2FF
 }
 
+body.dark-mode .contact:hover {
+  background-color: #2D1674;
+  border-color: #9271C2;
+  color:#FFF2FF
+}
+
+body.dark-mode .box {
+  border-color: #9271C2;
+}
+
+body.dark-mode .scroll-btn {
+  background-color: #9271C2;
+}
+
+body.dark-mode .scroll-btn:hover {
+  background: linear-gradient(#2D1674, #9271C2, white);
+}
+
+body.dark-mode  .title {
+  text-align: center;
+  color: #FFF2FF;
+  text-shadow: 2px 2px 4px #9271C2;
+}
+
+
 .contact {
   font-weight: bold;
   font-size: 1.4em;
@@ -197,12 +222,12 @@ body.dark-mode .contact {
     gap: 15px;
   }
 
-  #projects {
-    padding: 0.2em 0.6em 0.2em 0.6em;
+  .navLink {
+    font-size: 1.3em;
   }
 
-  .navLink {
-    text-decoration: underline;
+  .contact {
+    font-size: 1.3em;
   }
 
   .dPurpleBtn {
@@ -218,25 +243,6 @@ body.dark-mode .contact {
 
   h3 {
     font-size: 1.2em;
-  }
-
-  .projectView {
-    flex-direction: column;
-  }
-
-  .innerBox1 {
-    width: 100%;
-  }
-
-  .innerBox2 {
-    flex-direction: row;
-    width: 100%;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .skillsApplied {
-    width: 50%;
   }
 
 }

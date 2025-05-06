@@ -5,18 +5,18 @@ html {
 body {
   background-color: #FFF2FF;
   font-family: Helvetica, Arial, sans-serif;
-  padding: 75px 10px 10px 10px;
+  /*padding: 75px 10px 10px 10px;*/
 }
-
+/*
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;  /* Make it span the entire width */
+  width: 100%; 
   background-color: #FFF2FF;
-  z-index: 1000; /* Ensure it stays on top of other content */
-}
+  z-index: 1000; 
+}*/
 
 #logo {
   width: 5em;
@@ -200,15 +200,6 @@ body.dark-mode .projectView {
   border-color: #9271C2;
 }
 
-body.dark-mode .dPurpleBtn {
-  background-color: #FFF2FF;
-  color:#2D1674;
-}
-
-body.dark-mode .dPurpleBtn:hover {
-  background: linear-gradient(#FFF2FF, #9271C2);
-}
-
 body.dark-mode .returnBtn {
   color:#FFF2FF;
   border-color: #FFF2FF;
@@ -317,6 +308,55 @@ body.dark-mode .contact {
 
 .pdf {
   margin-top: 10px;
+  width: 600px;
+}
+
+embed {
+  height: 400px;
+  width: 90%;
+  margin-top: 10px;
+}
+
+body.dark-mode .contact {
+  background-color: #9271C2;
+  border-color: #2D1674;
+  color:#FFF2FF
+}
+
+body.dark-mode .contact:hover {
+  background-color: #2D1674;
+  border-color: #9271C2;
+  color:#FFF2FF
+}
+
+body.dark-mode .anchor {
+  background-color: #9271C2;
+}
+
+body.dark-mode .anchor:hover {
+  background: transparent;
+  border: solid 2px #9271C2;
+  color:#FFF2FF;
+}
+
+body.dark-mode .divider {
+  border-color: #9271C2;
+}
+
+body.dark-mode .lPurpleBtn:hover {
+  background-color: transparent;
+  color:#FFF2FF;
+}
+
+body.dark-mode .dPurpleBtn {
+  background-color: #FFF2FF;
+  color:#2D1674;
+}
+
+body.dark-mode .dPurpleBtn:hover {
+  background: transparent;
+  border-color:#FFF2FF;
+  color:#FFF2FF;
 }
 
 @media (max-width: 768px) { /* Adjust for mobile screens */
@@ -329,13 +369,41 @@ body.dark-mode .contact {
     gap: 15px;
   }
 
+  .navLink {
+    font-size: 1.3em;
+  }
+
+  .contact {
+    font-size: 1.3em;
+  }
+
+  .flexy {
+    display: flex;
+   flex-direction: column;
+  }
+
+  .anchorBtns {
+    width: 100%;
+    gap: 4px;
+    margin: auto;
+  }
+
+  embed {
+    width: 95%;
+  }
+
+  .pdf {
+    width: 95%;
+  }
+
+  .dPurpleBtn {
+    font-size: 1.2em;
+    width: 10em;
+  }
+
   #modeBtn {
     height: 2.4em;
     width: 2.4em;
-  }
-
-  .navLink {
-    text-decoration: underline;
   }
 
   h3 {
@@ -350,15 +418,6 @@ body.dark-mode .contact {
   .basicInfo {
     flex-direction: column;
     gap: 10px;
-  }
-
-  .acuvueHomescreen {
-    height: 21em;
-    width: 10em;
-    position:relative;
-    left: auto;
-    margin: auto;
-
   }
 
 }
