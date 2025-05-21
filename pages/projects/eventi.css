@@ -149,6 +149,13 @@ ul {
 
 iframe {
   margin-top: 10px;
+  width: 95%;
+  height: 500px;
+}
+
+.pdf {
+  width: 75%;
+  height: 500px;
 }
 
 .returnBtn {
@@ -311,12 +318,6 @@ body.dark-mode .contact {
   width: 600px;
 }
 
-embed {
-  height: 400px;
-  width: 90%;
-  margin-top: 10px;
-}
-
 body.dark-mode .contact {
   background-color: #9271C2;
   border-color: #2D1674;
@@ -365,16 +366,21 @@ body.dark-mode .dPurpleBtn:hover {
     width: 4em;
   }
 
+  header {
+   padding: 0 5px;
+  }
+
   nav {
-    gap: 15px;
+    gap: 10px;
   }
 
   .navLink {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .contact {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    padding: 2px 5px 2px 5px;
   }
 
   .flexy {
@@ -386,10 +392,6 @@ body.dark-mode .dPurpleBtn:hover {
     width: 100%;
     gap: 4px;
     margin: auto;
-  }
-
-  embed {
-    width: 95%;
   }
 
   .pdf {

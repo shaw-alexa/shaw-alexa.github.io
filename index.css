@@ -234,20 +234,25 @@ body.dark-mode #d5, body.dark-mode #d8, body.dark-mode #d9 {
 
 @media (max-width: 768px) {
   #logo {
-    height: 4em;
-    width: 4em;
+    height: 3.8em;
+    width: 3.8em;
+  }
+
+  header {
+   padding: 0 5px;
   }
 
   nav {
-    gap: 15px;
+    gap: 10px;
   }
 
   .navLink {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .contact {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    padding: 2px 5px 2px 5px;
   }
 
   .row {

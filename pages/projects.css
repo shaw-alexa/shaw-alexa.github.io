@@ -217,17 +217,22 @@ body.dark-mode  .title {
     height: 4em;
     width: 4em;
   }
+  
+  header {
+   padding: 0 5px;
+  }
 
   nav {
-    gap: 15px;
+    gap: 10px;
   }
 
   .navLink {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .contact {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    padding: 2px 5px 2px 5px;
   }
 
   .dPurpleBtn {
@@ -245,4 +250,10 @@ body.dark-mode  .title {
     font-size: 1.2em;
   }
 
+  .box {
+    min-width: 240px;
+    border: solid 4px #2D1674;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
 }

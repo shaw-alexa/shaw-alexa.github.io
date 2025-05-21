@@ -355,16 +355,21 @@ body.dark-mode .contact {
     width: 4em;
   }
 
+  header {
+   padding: 0 5px;
+  }
+
   nav {
-    gap: 15px;
+    gap: 10px;
   }
 
   .navLink {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .contact {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    padding: 2px 5px 2px 5px;
   }
 
   .info {
