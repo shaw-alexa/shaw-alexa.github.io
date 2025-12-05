@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Alexa Shaw">
+    <title>Courseway</title>
+    <link rel="stylesheet" href="courseway.css"/>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.png">
+    <script src="../../index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="../../images/logo.png" id="logo" onclick="navHome('projectExpanded')" alt="AJS in a purple circle">
+      <nav>
+        <a href="../projects.html" class="navLink" id="projects">Projects</a>
+        <a href="../about.html" class="navLink" id="about">About</a>
+        <a href="https://www.linkedin.com/in/alexaj-shaw/" class="contact">Contact</a>
+        <img src="../../images/darkMode.png" alt="purple circle with moon" onclick="darkMode()" id="modeBtn">
+      </nav>
+    </header>
+
+    <div class="projectInfo">
+      <h3>Courseway</h3>
+      <p class="skillsApplied">PostgreSQL <span class="coloredDot">•</span> Database Design <span class="coloredDot">•</span> Database Querying</p>
+      <button onclick="openProject('../projects.html')" class="returnBtn">Return to projects page</button>
+    </div>
+
+    <div class="anchorBtns">
+      <a class="anchor" href="#background">Background</a>
+      <a class="anchor" href="#desings">Designs and Demo</a>
+      <a class="anchor" href="#future">Future Applications</a>
+    </div>
+
+    <div class="divider">
+      <p class="words" id="background">Background</p>
+    </div>
+
+    <h4>Overview</h4>
+    <p>The project consisted of a course querying application in which students can search for courses 
+      containing particular keywords and add courses to a schedule panel. Course information was obtained 
+      from the following openly-sourced Course Catalog Dataset from Data Science Discovery at the University 
+      of Illinois Urbana-Champaign (Data Science Discovery). The data was extracted from the repository, 
+      transformed to ensure normalization, and then loaded into a relational database. An additional feature 
+      of this application includes data visualizations. Statistics, including a breakdown of which 
+      departments the student has registered for classes in, as well as complete breakdown of courses by 
+      credit count, will be accessible. In summary, the application will have three main features. These 
+      include adding courses to a schedule panel, querying courses for keywords, and viewing data 
+      visualizations.</p>
+      <br>
+      <p><strong>References:</strong></p>
+      <p>Data Science Discovery. “Course Catalog Dataset.” <em>Data Science Discovery</em>, <br>
+        https://discovery.cs.illinois.edu/dataset/course-catalog/.</p>
+   
+    <h4>Objectives</h4>
+    <ul>
+      <li>Desgin a PostgreSQL database.</li>
+      <li>Extract data from a CSV file and add it to a PostgreSQL database</li>
+      <li>Develop a front-end interface to query the database and dynamically display results.</li>
+    </ul>
+
+    <div class="divider">
+      <p class="words" id="desings">Designs and Demo</p>
+    </div>
+
+    <h4>ETL</h4>
+    <p>pgAdmin 4 was utilized to query and visualize the database. To establish relationships between certain
+      tables, foreign keys were used. Information was downloaded from the Data Discovery Center website as a 
+      CSV file. A staging table was created with all of the same rows present in the CSV file to allow for 
+      easy information transfer. Certain information was edited in the CSV to allow for an easier transfer. 
+      For instance, some start times of courses were listed as “arranged” as they were independent studies. 
+      This was causing a break in the start time column of the staging table as the data type was listed as 
+      “time.” To solve this issue, all rows containing start time as “arranged” were removed. 
+      In total, the staging table contains 9,382 rows.</p>
+
+    <h4>Keyword Assingment</h4>
+    <p>Keywords were added to courses following the ETL process. A course_keyword table was developed matching
+      specific courses with keywords. The table contained the course_id and keyword_id as foreign keys. Fifty
+      keywords associated from college courses were utilized. Keywords were matched with courses by searching 
+      for the keyword in the course name or description and attaching a keyword to said course if it was found.</p>
+      
+    <h4>Development</h4>
+    <p>The front-end of the application was developed using React.js and styled with Tailwind CSS. The final
+       application included the following pages: login, dashboard, courses, schedule, report, and account. 
+       Logins were handled using localStorage. The dashboard page allowed students to get a quick overview 
+       of what classes they were registered for and a snapshot of available courses. The course page 
+       contained the full list of courses available as well as search and filter capabilities. The schedule
+       page displayed a student's full schedule over the semester. The report page contained data 
+       visualizations based on a student's registration status. The account contained information about the 
+       student, including email and student status.</p>
+    
+    <div class="divider">
+      <p class="words" id="future">Future Applications</p>
+    </div>
+    
+    <h4>Future Steps</h4>
+    <p>In the future, it would be great to include a responsive design so the website is useable on both 
+      desktop and mobile. 
+    </p>
+
+    <h4>Lessons Learned</h4>
+    <ul>
+      <li>A unique identifier in a table can be used as a primary key, generating a new random number for a 
+        primary key is not always most efficient.</li>
+      <li>Always design with the ability to scale in the future.</li>
+    </ul>
+  </body>
+</html>
