@@ -283,6 +283,12 @@ body.dark-mode .contact {
   color:#110c23;
 }
 
+#demo {
+  display: none;
+  height: 400px;
+  width: 600px;
+}
+
 @media (max-width: 768px) {
   #logo {
     height: 4em;
@@ -319,5 +325,10 @@ body.dark-mode .contact {
 
   h3 {
     font-size: 1.2em;
+  }
+
+   #demo {
+    height: 300px;
+    width: 350px;
   }
 }
