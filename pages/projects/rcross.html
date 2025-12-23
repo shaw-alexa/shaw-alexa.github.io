@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Alexa Shaw">
+    <title>Red Cross Go Team Tracker</title>
+    <link rel="stylesheet" href="rcross.css"/>
+    <link rel="icon" type="image/x-icon" href="../../images/logo.png">
+    <script src="../../index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="../../images/logo.png" id="logo" onclick="navHome('projectExpanded')" alt="AJS in a purple circle">
+      <nav>
+        <a href="../projects.html" class="navLink" id="projects">Projects</a>
+        <a href="../about.html" class="navLink" id="about">About</a>
+        <a href="https://www.linkedin.com/in/alexaj-shaw/" class="contact">Contact</a>
+        <img src="../../images/darkMode.png" alt="purple circle with moon" onclick="darkMode()" id="modeBtn">
+      </nav>
+    </header>
+
+    <div class="projectInfo">
+      <h3>Red Cross Go Team Tracker</h3>
+      <p class="skillsApplied">Card Sorting <span class="coloredDot">•</span> Tree Testing <span class="coloredDot">•</span> Design Systems</p>
+      <button onclick="openProject('../projects.html')" class="returnBtn">Return to projects page</button>
+    </div>
+
+    <section class="basicInfo">
+      <p class="info"><strong>Client: </strong>Red Cross</p>
+      <p class="info"><strong>Class: </strong>Foundations of HCI Usability</p>
+      <p class="info"><strong>Role: </strong>UI/UX Designer</p>
+      <p class="info"><strong>Duration: </strong> September 2025 - December 2025</p>
+    </section>
+
+    <div class="anchorBtns">
+      <a class="anchor" href="#background">Background</a>
+      <a class="anchor" href="#research">UX Research</a>
+      <a class="anchor" href="#desings">Designs</a>
+      <a class="anchor" href="#future">Future Applications</a>
+    </div>
+
+    <div class="divider">
+      <p class="words" id="background">Background</p>
+    </div>
+
+    <h4>Background</h4>
+    <p>The Red Cross is one of the nation's first disaster relief organizations. The Red Cross provides
+      emergency assistance and services during disasters. In addition, they provide medical support during 
+      other events. Like many other emergency services organizations, the command systems to record events
+      and communicate with command are antiquated, leaving room for improvement.</p>
+
+    <h4>Challenge</h4>
+    <p>During certain events, the American Red Cross command staff experience difficulties in tracking the 
+      movements of on-the-ground responders. The current method of tracking members creates communication 
+      delays between command and response teams, reducing cohesion and hindering effectiveness during 
+      time-sensitive operations. Thus, the team set out to develop a technical solution that could be 
+      utilized by emergency responders during special events to better document incidents and communicate 
+      with command.</p>
+   
+    <h4>Objectives</h4>
+    <ul>
+      <li>Establish the designs for an updated communication system.</li>
+      <li>Develop a functional prototype and conduct UX research.</li>
+    </ul>
+
+    <div class="divider">
+      <p class="words" id="research">UX Research</p>
+    </div>
+
+    <h4>My Role</h4>
+    <p>I developed the wireframes for the user view of the application utilizing Figma. I was also involved
+      in various parts of the user research portion of development, including contextual research, 
+      card sorting, tree testing, and usability testing.</p>
+
+    <h4>Contextual Research</h4>
+    <p>The team began with contextual research to develop baseline knowledge on the types of injuries 
+      occurring at large-scale events, EMS best practices at large events, and the features present in 
+      incident command systems (ICS). Mass gatherings can include concerts, sporting events, religious 
+      celebrations, street fairs, parades, and political rallies. Each event is unique, and estimation of 
+      necessary resources can be derived from previous events of a similar nature. At large-scale events, 
+      typical injuries include crush injuries, traumatic brain injuries, burns, lacerations, 
+      heat exhaustion/dehydration, and substance abuse. To reduce the risk of injury, it’s crucial for 
+      emergency responders to have a well-developed plan prior to providing medical care at events. The 
+      utmost priority of emergency responders during events is scene safety and personnel safety. Lastly, 
+      it should be discussed with the organizer whether post-event medical care will be provided.</p>
+
+    <h4>Unstructured Interviews</h4>
+    <p>Unstructured Interviews were conducted with two Red Cross members. The interviews provided insight into
+       the current procedure for special event communication. Depending on the event, volunteers must 
+       coordinate with nearby hospitals, deploy in high-risk locations, and attend a Red Cross briefing the 
+       day before the event. During an event, volunteers typically engage in hourly communication with 
+       command regarding team status, location, and observations. Following the conclusion of an event, 
+       Go Teams must provide post-event updates on crowd movements or activities. </p>
+
+    <h4>Card Sorting</h4>
+    <p>Participants found that the wording used for “report and emergency” and “document an event” was 
+      unclear. One participant mentioned that “document an event” was far too broad and needed to be broken 
+      down into additional, more descriptive categories. Some suggestions for improved clarification included 
+      having “documentation” as an overarching category, and within that category, include documentation for 
+      admin (prep work, liaison work) and documentation for users (list emergency situation progress, record 
+      notes). Updates included a revamped navigation bar, display of status information as a timeline as 
+      opposed to icons, display of GPS location of assistance on the track status page, splitting reports into
+       active and resolved emergencies, including announcements, check-in, and crowd condition reporting 
+       functionality.</p>
+
+    <h4>Concept Testing</h4>
+    <p>Concept testing was conducted with the low-fidelity prototype; participants included members of 
+      RPI Ambulance and personnel at the local firehouse. The feedback highlighted pain points in form 
+      fields and documentation categories. The vast majority of documentation for events fell into a fairly
+      predictable set of categories. Thus, the field for documenting an event was changed from a write-in
+      field to a radio button format. This would allow for greater efficiency when logging events and
+      standardization of data entry.</p>
+
+    <h4>Usability Testing</h4>
+    <p>Usability testing was conducted with a wide variety of potential users, including trained Red Cross 
+      volunteers, first responders, and several individuals who were completely new to the system. Testing 
+      was conducted with the finalized high-fidelity prototype. The vast majority of users were able to 
+      complete the assigned tasks, demonstrating a minimal learning curve for the application. Other minor 
+      changes included adjusting the expanded task view to a minus icon instead of an "x" to demonstrate 
+      minimizing and expanding tasks as opposed to opening and closing them. Additionally, the input method
+       for reporting resolved events was changed from radio buttons to a dropdown to accommodate a large 
+       number of options.</p>
+
+
+    <div class="divider">
+      <p class="words" id="desings">Designs</p>
+    </div>
+
+    <h4>Low Fidelity</h4>
+    <p>Initial designs began as low-fidelity wireframes. These designs were developed following the 
+      information gained from secondary research and unstructured interviews. The designs initially featured
+      a page to track the status of emergencies, reporting emergencies, and documenting an event. A low to 
+      medium fidelity update is pictured below. </p>
+      <div class="imgBox">
+        <img src="../../images/trackStatus.png" class="image" alt="Track Status Updates"/>
+      </div>
+    <button class="lPurpleBtn" onclick="openLink('https://www.figma.com/design/iO7O0pOQGaMaQwL3PoDgqg/Foundations-of-HCI-Designs?node-id=0-1&t=yz8Vaa8YgtShvzFy-1')">View Low Fidelity Wireframes</button>
+    <button class="dPurpleBtn" onclick="openLink('https://www.figma.com/proto/iO7O0pOQGaMaQwL3PoDgqg/Foundations-of-HCI-Designs?node-id=1-2&p=f&t=QuWi1aoqh4KTk2jo-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1')">View Low Fidelity Prototype</button>
+    
+    <h4>Medium Fidelity</h4>
+    <p>Following concept testing and card-sorting, designs were updated to medium-fidelity. The navigation bar 
+    was redesigned and more specified information was included. Additional functionality was added to the 
+    application including a section for announcements, check-in form, reporting crowd conditions functionality,
+    and the ability to view and update submitted documents. The final set of tests, tree testing, and 
+    usability testing all led to the final design wireframes. The following image shows the updates for the 
+    track status page from medium fidelity to high fidelity.</p> 
+     <div class="imgBox">
+        <img src="../../images/midHigh.png" class="image" alt="Medium to High Fidelity Updates"/>
+      </div>
+    <button class="lPurpleBtn" onclick="openLink('https://www.figma.com/design/iO7O0pOQGaMaQwL3PoDgqg/Foundations-of-HCI-Designs?node-id=1-458&t=yz8Vaa8YgtShvzFy-1')">View Medium Fidelity Wireframes</button>
+    <button class="dPurpleBtn" onclick="openLink('https://www.figma.com/proto/iO7O0pOQGaMaQwL3PoDgqg/Foundations-of-HCI-Designs?node-id=1-891&p=f&t=ruftgurUs4NfAbG9-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A458')">View Medium Fidelity Prototype</button>
+
+    <h4>High Fidelity</h4>
+    <p>The navigation bar was finalized and track status was changed. Rather than display the timeline on the
+      updates page, a general icon with the color and status were displayed. To view additional information,
+      events could be expanded. To streamline reporting an emergency, a series of buttons were utilized. 
+      Users can select an emergency type to view a form with prefilled information to simplify the 
+      submission process. Document history was updated to an accordion format filtered by the specified 
+      event that was occurring. Documentation for the current day was listed at the top with filtering 
+      capabilities to see information from the last seven days.The expanded details for information regarding 
+      submitted documents mirror the design of the active updates view for design consistency. To match the 
+      user's mental models, the icon for the current location of a team was chosen as a flag to mirror teams 
+      placing flags into the ground to showcase their current position to ensure help could find them. The image
+      below shows updates to the form fields including a section for priority and documentaiton filtering.</p> 
+      <div class="imgBox">
+        <img src="../../images/priority.png" class="image" alt="Adding priority to form field inputs"/>
+        <img src="../../images/docs.png" class="image" alt="Adding documentation screen"/>
+      </div>
+    <button class="lPurpleBtn" onclick="openLink('https://www.figma.com/design/iO7O0pOQGaMaQwL3PoDgqg/Foundations-of-HCI-Designs?node-id=1-459&t=yz8Vaa8YgtShvzFy-1')">View High Fidelity Wireframes</button>
+    <button class="dPurpleBtn" onclick="openLink('https://www.figma.com/proto/iO7O0pOQGaMaQwL3PoDgqg/Foundations-of-HCI-Designs?node-id=1-2566&p=f&t=EgvbM6mLjFbCZRT2-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A459')">View High Fidelity Prototype</button>
+
+
+    <div class="divider">
+      <p class="words" id="future">Future Applications</p>
+    </div>
+    
+    <h4>Lessons Learned</h4>
+    <ul>
+      <li>Design with components to create consistency.</li>
+      <li>Beware of developing UX research tasks that lead users to the end goal.</li>
+    </ul>
+  </body>
+</html>
